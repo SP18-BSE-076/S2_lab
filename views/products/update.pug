@@ -1,18 +1,18 @@
 extends ../layout
 
 block content
-    h1 Update Existing Course
+    h1 Update Course
     form(action="/products/update/"+product._id,method="post")
         .form-group
-            label(for="name") Course Name
+            label(for="name") Name
             input#name(type="text", class="form-control",name="name")
         .form-group
-            label(for="id") Course ID
+            label(for="id")  ID
             input#price(type="text", class="form-control",name="id")
         .form-group
-            label(for="duration") Course Duration
+            label(for="duration")  Duration
             input#name(type="text", class="form-control",name="duration")
         .form-group
-            label(for="fee") Course Fee
+            label(for="fee")  Fee
             input#name(type="text", class="form-control",name="fee")
-        input(type="submit", class="btn btn-info")
+        input(type="submit", class="btn btn-success")
